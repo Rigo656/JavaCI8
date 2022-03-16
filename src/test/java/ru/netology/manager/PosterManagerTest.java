@@ -55,7 +55,7 @@ class PosterManagerTest {
         manager.addMovie(eleventh);
 
 
-        Poster[] expected = {tenth, ninth, eighth, seventh, sixth, fifth, fourth, third, second, first};
+        Poster[] expected = {eleventh, tenth, ninth, eighth, seventh, sixth, fifth, fourth, third, second};
         Poster[] actual = manager.getLatestMovies();
         assertArrayEquals(expected, actual);
 
@@ -74,7 +74,7 @@ class PosterManagerTest {
         manager.addMovie(eighth);
 
 
-        Poster[] expected = {seventh, sixth, fifth, fourth, third, second, first};
+        Poster[] expected = {eighth, seventh, sixth, fifth, fourth, third, second};
         Poster[] actual = manager.getLatestMovies();
         assertArrayEquals(expected, actual);
 
